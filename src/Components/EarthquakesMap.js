@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom'
-import { Link } from 'react-router-dom'
 
 
 export default class EarthquakesMap extends Component {
@@ -48,7 +47,7 @@ export default class EarthquakesMap extends Component {
           content: `<h3>${quake.properties.title}</h3>
           <h4>${(new Date(quake.properties.time)).toDateString()}
           at depth of ${quake.geometry.coordinates[2]} km</h4>
-          <Link to="/" >More Info</Link>`
+          <a href=${quake.properties.url} target="_blank">More Info</a>`
         });
         marker.addListener('click', function() {
           infowindow.open(this.map, marker);

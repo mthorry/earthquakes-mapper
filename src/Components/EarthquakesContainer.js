@@ -29,11 +29,13 @@ class EarthquakesContainer extends Component {
   render() {
     return (
       <div className="EarthquakesContainer">
-        <h1>Earthquake Finder</h1>
+        <h1>🌐 Earthquake Mapper</h1>
         <div className="wrapper">
           <EarthquakesForm onFilter={this.onFilter}/>
           <Route path="/" render={(props) => <EarthquakesMap google={this.props.google} quakes={this.state.quakes} {...props}/>}/>
         </div>
+        <br/>
+        <p><strong>This app was created with ❤️ by me, Matthew Thorry.</strong> Checkout the <a href="https://github.com/mthorry/earthquakes-mapper" target="_blank" rel="noopener noreferrer">GitHub repo</a>, my <a href="https://medium.com/front-end-hacking/using-the-google-maps-javascript-api-in-a-react-project-b3ed734375c6" target="_blank" rel="noopener noreferrer">blog post</a> about this, or my <a href="https://www.linkedin.com/in/mthorry/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.</p>
       </div>
     );
   }
