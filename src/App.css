@@ -16,6 +16,7 @@ h1, h3, p, label, input {
 
 .App {
   padding: 5px;
+  background-image: url('./topography.png');
 }
 
 .myButton {
