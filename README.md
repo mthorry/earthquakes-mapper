@@ -9,4 +9,4 @@ This was my first React App, so it is fairly simple. The components are `Earthqu
 Each earthquake data point the map receives is plotted on the map based on its coordinates, weighted (for Heatmap) based on its magnitude, and given a title (for popup).
 
 ### Services
-Services holds the `fetch` requests to the USGS API. There `fetchQuakes` (which returns all earthquakes for last 30 days) and `searchQuakes` (which returns all earthquakes that meet user-specified criteria) functions. The results of the fetch requests are stored in the `quakes` state in the `EarthquakesContainer`.
+Services holds the `fetch` requests to the USGS API. There `fetchQuakes` (which returns all earthquakes for last 30 days) and `searchQuakes` (which returns all earthquakes that meet user-specified criteria) functions. The results of the fetch requests are stored in the `quakes` state in the `EarthquakesContainer`. 
